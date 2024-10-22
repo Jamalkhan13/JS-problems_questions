@@ -111,3 +111,21 @@ console.log(formateDate());
 
 
 
+// write a js program to create a new string adding "New" in front of a given string .if the given string begins with "new " already then return the orignal string
+
+
+const addNew = (str)=> str.indexOf('New!') === 0 ? str : `New! ${str}`;
+console.log(addNew(' hello'));
+
+const AddString = (str)=>{
+  return str.indexOf('Hello') === 0 ? str : `Hello ${str}`
+}
+console.log(AddString('Hello shahan'));
+
+const AddNewString = (str)=> {
+  if(str.indexOf('Hello') !==0){
+    return `Hello ${str}`
+  }
+  return str
+}
+console.log(AddNewString('Hello jamal'));
