@@ -123,9 +123,47 @@ const AddString = (str)=>{
 console.log(AddString('Hello shahan'));
 
 const AddNewString = (str)=> {
-  if(str.indexOf('Hello') !==0){
+  if(!str.indexOf('Hello') !==0){
     return `Hello ${str}`
   }
   return str
 }
-console.log(AddNewString('Hello jamal'));
+console.log(AddNewString('khan'));
+
+
+
+
+
+// const AddNewString = (str)=> {
+//   if(!str.includes('Hello')){
+//     return `Hello ${str}`
+//   }
+//   return str
+// }
+// console.log(AddNewString('jamal'));
+
+
+
+ let arr = [1,2,3,4,5]
+// const myNumber = (num1) => {
+//   if(arr.indexOf(num1) !== -1 ){
+//     return arr 
+//   } else {
+//      arr.push(num1)
+//      return arr
+//   }
+  
+//}
+
+  //console.log(myNumber(8));
+
+const myArray = (num1)=>{
+  if(arr.includes(num1)){
+    return arr
+  } else if (!arr.includes(num1)){
+    arr.push(num1)
+    return arr
+  }
+}
+  console.log(myArray(10));
+  
