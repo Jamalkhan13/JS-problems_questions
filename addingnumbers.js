@@ -123,7 +123,7 @@ const AddString = (str)=>{
 console.log(AddString('Hello shahan'));
 
 const AddNewString = (str)=> {
-  if(!str.indexOf('Hello') !==0){
+  if(str.indexOf('Hello') !==0){
     return `Hello ${str}`
   }
   return str
