@@ -34,4 +34,4 @@ console.log(concan('jamal', 'khan'));
 
 
 const concat = (str1)=> str1.slice(0,2) + str1.slice(3) 
-console.log(concat('jamal'));
+console.log(concat('jamal')); 
