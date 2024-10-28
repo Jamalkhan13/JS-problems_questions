@@ -70,3 +70,68 @@ const createArrayOfNumbers = (num)=>{
   return getArray
 }
 console.log(countEvenNumbers(createArrayOfNumbers(5)));
+
+
+
+// write a JS program to check weather a given array of integars is stored in ascending order
+
+// const ascendingNumber = (arr )=> {
+//   for(let i=1; i<=arr.length;i++){
+//     if(arr[i+1]<arr[i]){
+//       return false
+//     }
+//   }
+//   return true
+// }
+// console.log(ascendingNumber([1,3,2,4,5,6,7,8,9,10]));
+
+
+// const myArray = [1,2,3,4,5,6,7,8,9,10]
+// const myArray2 = [1,2,3,4,8,4,5,6,7]
+
+// const ascendingNumbers = (arr) => {
+//   for(let i = 1; i<=arr.length;i+=1){
+//     if(arr[i]>arr[i+1]){
+//       return false
+//     }
+//   }
+//   return true
+// }
+// console.log(ascendingNumbers(myArray));
+// console.log(ascendingNumbers(myArray2));
+
+
+//  weather descending order or not 
+
+const descendingNumber = (arr) => {
+  for(let i = 0; i<=arr.length; i+=1){
+    if(arr[i]<arr[i+1]){
+      return false
+    }
+  }
+  return true
+}
+
+console.log(descendingNumber([10,9,8,11]));
+
+
+// write a JS program to get the largest even number from an array of integers
+
+
+const largestEvenNumber = (arr) => {
+  return Math.max(...arr.filter(num => num%2===0))
+
+}
+console.log(largestEvenNumber([1,2,3,4,5,6,7,8,9,10]));
+console.log(largestEvenNumber([22,31,22,45,6,,186,89,99,102,104,106,108,110,112]));
+
+
+// write a JS program to replace the first digit in a string (should contain atleast digit) with $ character
+
+const replaceFirstDigit = (str) => {
+  return str.replace(/\d/, '$');
+}
+console.log(replaceFirstDigit('Abcd1Abcd'));
+console.log(replaceFirstDigit('Abc123Abcde'));
+console.log(replaceFirstDigit('A1cd1Abcd1'));
+
