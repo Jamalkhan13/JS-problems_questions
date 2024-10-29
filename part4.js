@@ -143,3 +143,48 @@ console.log(newStr);
 
 
 // write a JS program to generate a random hexadecimal color code 
+
+const getRandomHexNumber = () => {
+  return Math.floor(Math.random()*16).toString(16)
+} 
+
+const getRandomHexColor = () => {
+  return '#' + Array.from({ length: 6}).map(getRandomHexNumber).join('');
+}
+console.log(getRandomHexColor());
+console.log(getRandomHexColor());
+console.log(getRandomHexColor());
+console.log(getRandomHexColor());
+console.log(getRandomHexColor());
+
+
+const HexDecimal = () => {
+  return Math.floor(Math.random()*16).toString(16)
+}
+
+const hexColor = () =>{
+  return '#'+Array.from({length:6}).map(HexDecimal).join('')
+}
+console.log(hexColor());
+
+
+
+// Write a JS function that return true if the provided predicate function returns true for all element in a collection ,false otherwise
+
+console.log([1,2,3,4,5,6,7].every(x=> x>-1));
+
+const isEveryElement = (arr, fun)=>{
+    for(let i = 0; i<arr.length; i++){
+      if( !fun(arr[i])){
+        return false
+      }
+    }
+    return true
+}
+
+
+
+console.log(isEveryElement([1,2,3,4,5,6,7],(x)=> x>0));
+console.log(isEveryElement([1,2,3,4,5,6,7],(x)=> x>1));
+
+
