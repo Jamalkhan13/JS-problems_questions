@@ -39,7 +39,6 @@
 // }
 // console.log(findEven(myArray))
 
-
 const even = (arr)=>{
   let evenNumbers = []
   for(let i = 1;i<arr.length;i++){
