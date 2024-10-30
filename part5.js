@@ -118,9 +118,11 @@ const getUniqueChar2 = (str) =>
 console.log(getUniqueChar2('aaabbbcccdssds'));
 
 
-// Exercise a JS Function to find the first not repeated character 
+// Exercise  5
+//write a JS Function to find the first not repeated character 
 // example string: 'abcdefghi'
 // expected outcome : 'e'
+
 
 const getNonRepeatedChar = (str) =>
   str.split('')
