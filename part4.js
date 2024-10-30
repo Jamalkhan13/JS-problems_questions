@@ -52,7 +52,6 @@ console.log(equalObjects(object1,object2));
 console.log(equalObjects(object1,object3));
 
 
-
 // method two using for in loop
 const anotherEqualObjects = (a,b)=>{
 
