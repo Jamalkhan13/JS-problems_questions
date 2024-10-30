@@ -117,7 +117,6 @@ const getUniqueChar2 = (str) =>
   [... new Set(str.split(''))];   // The Set automatically removes duplicate values, leaving only unique characters.
 console.log(getUniqueChar2('aaabbbcccdssds'));
 
-
 // Exercise  5
 //write a JS Function to find the first not repeated character 
 // example string: 'abcdefghi'
