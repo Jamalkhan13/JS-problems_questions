@@ -1,22 +1,22 @@
 // Exercise 01
 // Ggiven a leap year, report if it is a leap year
 
-// const leapYears = (year) => year %4 === 0
-// console.log(leapYears(2028));
+const leapYears = (year) => year %4 === 0
+console.log(leapYears(2028));
 
 
 
 
-// const leap = [2020,2021,2022,2023,2024,2026,2028,2030,2032]
-// const leapYear = (year) => {
+const leap = [2020,2021,2022,2023,2024,2026,2028,2030,2032]
+const leapYear = (year) => {
 
-//   return (year%4===0)
-// }
+  return (year%4===0)
+}
 
-// const results = leap.map(leapYear)
-// const leapYearsOnly = leap.filter((year,index)=> results[index])
-// console.log(results);
-// console.log(leapYearsOnly);
+const results = leap.map(leapYear)
+const leapYearsOnly = leap.filter((year,index)=> results[index])
+console.log(results);
+console.log(leapYearsOnly);
 
 
 
@@ -181,8 +181,6 @@ const isEveryElement = (arr, fun)=>{
     }
     return true
 }
-
-
 
 console.log(isEveryElement([1,2,3,4,5,6,7],(x)=> x>0));
 console.log(isEveryElement([1,2,3,4,5,6,7],(x)=> x>1));

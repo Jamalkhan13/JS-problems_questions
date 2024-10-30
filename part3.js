@@ -40,16 +40,16 @@
 // console.log(findEven(myArray))
 
 
-// const even = (arr)=>{
-//   let evenNumbers = []
-//   for(let i = 1;i<arr.length;i++){
-//     if (arr[i]%2===0) {
-//        evenNumbers.push(arr[i])
-//     }
-//   }
-//   return evenNumbers
-// }
-// console.log(even(myArray));
+const even = (arr)=>{
+  let evenNumbers = []
+  for(let i = 1;i<arr.length;i++){
+    if (arr[i]%2===0) {
+       evenNumbers.push(arr[i])
+    }
+  }
+  return evenNumbers
+}
+console.log(even(myArray));
 
 
 
