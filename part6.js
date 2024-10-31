@@ -17,50 +17,50 @@ const people = [
 
 
 //const result = people.reduce((accumaletor,person)=> accumaletor + parseInt(person.salary),0)// if salary is in string first covert into integer 
-// const result = people.reduce((accumaletor,person)=> accumaletor +  person.salary,0) / people.length // people.len will give average salary 
+const result = people.reduce((accumaletor,person)=> accumaletor +  person.salary,0) / people.length // people.len will give average salary 
 
-// console.log(result);
-
-
-// // Exercise 2
-// // Who are the people who are currently older than 30
-
-// // if DOB is in string then use new Date(person.DOB).getFuller it will convert from string to Date object if not in string then simple person.DOB.getFullYear() but DOB will be in form of Date object DOB: new Date(2000, 0, 1) instead of DOB : 23/3/1999
-
-// // const getOlderThan30 = people.filter((person)=> new Date().getFullYear() - person.DOB.getFullYear() > 30 
-
-// const getOlderThan30 = people.filter((person)=> new Date().getFullYear() - new Date(person.DOB).getFullYear()>30) 
-// console.log(getOlderThan30)
+console.log(result);
 
 
-// // Exercise 3
-// // Get a list of the people's FullName and Last name 
+// Exercise 2
+// Who are the people who are currently older than 30
 
-// const getName = people.map(person=> `${person.firstName}${person.lastName}`)
-// console.log(getName);
+// if DOB is in string then use new Date(person.DOB).getFuller it will convert from string to Date object if not in string then simple person.DOB.getFullYear() but DOB will be in form of Date object DOB: new Date(2000, 0, 1) instead of DOB : 23/3/1999
 
-// // using Destructure
+// const getOlderThan30 = people.filter((person)=> new Date().getFullYear() - person.DOB.getFullYear() > 30 
 
-// const getFullName = people.map(({firstName,lastName})=> `${firstName} ${lastName}`) 
-// console.log(getFullName);
-
-// // using spread operator to return whole object
-
-// const getNameUsingSpread = people.map(person=> ({...person, fullName: `${person.firstName} ${person.lastName}`}))
-// console.log(getNameUsingSpread);
+const getOlderThan30 = people.filter((person)=> new Date().getFullYear() - new Date(person.DOB).getFullYear()>30) 
+console.log(getOlderThan30)
 
 
-// // Exercise 4
-// // Get a list of people in the array ordered from youngest to oldest 
+// Exercise 3
+// Get a list of the people's FullName and Last name 
 
-// // older order
-//  const getOlder = people.sort((personA, personB)=> new Date(personA.DOB) - new Date(personB.DOB))
-//  console.log(getOlder);
+const getName = people.map(person=> `${person.firstName}${person.lastName}`)
+console.log(getName);
+
+// using Destructure
+
+const getFullName = people.map(({firstName,lastName})=> `${firstName} ${lastName}`) 
+console.log(getFullName);
+
+// using spread operator to return whole object
+
+const getNameUsingSpread = people.map(person=> ({...person, fullName: `${person.firstName} ${person.lastName}`}))
+console.log(getNameUsingSpread);
+
+
+// Exercise 4
+// Get a list of people in the array ordered from youngest to oldest 
+
+// older order
+ const getOlder = people.sort((personA, personB)=> new Date(personA.DOB) - new Date(personB.DOB))
+ console.log(getOlder);
  
 
-//  // youngest order
-//  const getYoungest = people.sort((personA, personB)=> new Date(personB.DOB) - new Date(personA.DOB))
-//  console.log(getYoungest);
+ // youngest order
+ const getYoungest = people.sort((personA, personB)=> new Date(personB.DOB) - new Date(personA.DOB))
+ console.log(getYoungest);
 
 
 // Exercise 5
