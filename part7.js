@@ -105,5 +105,23 @@ console.log(orderCheckingForId);
   Have any products with an id of 123 been sold 
 */
 
-const anyOrder = orders.reduce((accum,order)=> accum + order.items.reduce((acc,item)=>acc + (item.productId=== '123'),0),0);
+const anyOrder = orders.reduce((accum,order)=>
+   accum + order.items.reduce((acc,item)=>
+    acc + (item.productId=== '123'),0
+),0
+);
 console.log(anyOrder);
+
+
+// for each methid 
+
+let count = 0;
+orders.forEach(order => {
+  order.items.forEach(item =>{
+    if(item.productId==='123'){
+      count++ // increment count if the productId match '123'
+    }
+  })
+})
+console.log(count);
+
