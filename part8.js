@@ -29,11 +29,11 @@ Exercise 1
 what is Madison Marshall's user id 
 */
 
-// const findUser = users.find((user)=> user.firstName === 'Madison' && user.lastName === 'Marshall')
-// console.log(findUser);
+const findUser = users.find((user)=> user.firstName === 'Madison' && user.lastName === 'Marshall')
+console.log(findUser);
 
-// const findUserr = users.filter((user)=> user.firstName === 'Madison' && user.lastName ==='Marshall')
-// console.log(findUserr);
+const findUserr = users.filter((user)=> user.firstName === 'Madison' && user.lastName ==='Marshall')
+console.log(findUserr);
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -42,8 +42,8 @@ what is Madison Marshall's user id
 
 */
 
-// const findFirstComment = users.find((user)=> user.id === comments[0].userId)
-// console.log(findFirstComment);
+const findFirstComment = users.find((user)=> user.id === comments[0].userId)
+console.log(findFirstComment);
 
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -70,5 +70,26 @@ console.log(mix);
 */
 
 const addNames = comments.map((comment)=> {
-  users.find(user=> user.id === comment.userId)
+  const {firstName , lastName} = users.find(user=> user.id === comment.userId) // Decstructure first & last name from users object
+  return {...comment, firstName,lastName}
 })
+console.log(addNames);
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Exercise 5
+  Get a list of the users  who haven't commented 
+*/
+
+const haventCommeted = comments.filter((comment)=> !comment.text)
+console.log(haventCommeted);
+
+ const hello = users.filter((user)=>comments.find((comment)=> comment.userId === user.id))  // will show all the object users
+ console.log(hello);
+
+const whoNotCommented = users.filter((user)=> !comments.find((comment)=> comment.userId === user.id)) // will show who haven't commented
+console.log(whoNotCommented);
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
