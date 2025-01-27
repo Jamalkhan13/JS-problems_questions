@@ -182,6 +182,7 @@ const isEveryElement = (arr, fun)=>{
 }
 
 
+
 console.log(isEveryElement([1,2,3,4,5,6,7],(x)=> x>0));
 console.log(isEveryElement([1,2,3,4,5,6,7],(x)=> x>1));
 
