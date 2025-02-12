@@ -13,8 +13,6 @@ const people = [
 ]
 
 
-
-
 // Exercise 1
 // What is the average income of all the people in the array ?
 
