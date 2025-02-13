@@ -23,6 +23,11 @@ const result = people.reduce((accumaletor,person)=> accumaletor +  person.salary
 console.log(result);
 
 
+
+
+
+
+
 // Exercise 2
 // Who are the people who are currently older than 30
 
