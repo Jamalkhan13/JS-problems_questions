@@ -4,9 +4,6 @@ const MakeNewString = (str) => {
 console.log(MakeNewString('abcdefghi'));
 console.log(MakeNewString('jhi123,kjuhg789'));
 
-
-
-
 //  write a js program to extract the first half of a string of even length
 
 const firstHalf = (str) => str.slice(0,str.length/2)
